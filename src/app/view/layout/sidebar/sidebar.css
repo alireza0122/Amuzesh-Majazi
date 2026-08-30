@@ -1,0 +1,18 @@
+.sidebar{
+  border-radius: 35px 0 0 35px ;
+
+}
+
+.sidebar-fard{
+
+  background-color: #F0F3FA;
+  border: 1px solid #E5EAF8;
+  border-radius: 15px;
+}
+
+.sidebar-link li{
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #F0F3FA;
+  padding: 11.5px 20px  ;
+}

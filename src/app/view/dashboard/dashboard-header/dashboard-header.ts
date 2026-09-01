@@ -9,12 +9,19 @@ import { Component } from '@angular/core';
 export class DashboardHeader {
   date = new Date();
 
-  formatter = new Intl.DateTimeFormat('fa-IR', {
+  weekday = new Intl.DateTimeFormat('fa-IR', {
     weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+  }).format(this.date);
 
-  today = this.formatter.format(this.date);
+  day = new Intl.DateTimeFormat('fa-IR', {
+    day: 'numeric',
+  }).format(this.date);
+
+  month = new Intl.DateTimeFormat('fa-IR', {
+    month: 'long',
+  }).format(this.date);
+
+  year = new Intl.DateTimeFormat('fa-IR', {
+    year: 'numeric',
+  }).format(this.date);
 }

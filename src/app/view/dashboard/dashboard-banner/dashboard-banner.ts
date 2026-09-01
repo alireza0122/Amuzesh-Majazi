@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './dashboard-banner.css',
   templateUrl: './dashboard-banner.html',
 })
-export class DashboardBanner {}
+export class DashboardBanner {
+
+
+
+
+
+
+
+}

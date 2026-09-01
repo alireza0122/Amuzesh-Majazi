@@ -1,34 +1,36 @@
-<div class="mx-auto p-6 pt-10 ">
-  <div class="grid grid-cols-20 gap-8 items-center">
-    <div class="col-span-10">
+<div class="mx-auto p-6 pt-5 ">
+  <div class="grid lg:grid-cols-20 grid-cols-12 lg:gap-8 gap-2 items-center">
+    <div class="col-span-12 lg:col-span-10 lg:order-0 order-3">
       <p class="text-[#A2AEC9] font-[700]  text-[25px]">داشـــــــــــــــــــــــــــبورد</p>
 
     </div>
-    <div class="col-span-7">
+    <div class="lg:col-span-7 col-span-12 lg:order-1 order-2">
       <div class="flex items-center justify-end">
         <div class="relative w-full">
-          <svg
-            class="absolute right-3 top-1/2 -translate-y-1/2 z-10"
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.5 9.5C7.70914 9.5 9.5 7.70914 9.5 5.5C9.5 3.29086 7.70914 1.5 5.5 1.5C3.29086 1.5 1.5 3.29086 1.5 5.5C1.5 7.70914 3.29086 9.5 5.5 9.5Z"
-              stroke="#00C8B3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10.5 10.5L8.32495 8.325"
-              stroke="#00C8B3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <div class="">
+            <svg
+              class="absolute right-3 top-1/2 -translate-y-1/2 z-10"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.5 9.5C7.70914 9.5 9.5 7.70914 9.5 5.5C9.5 3.29086 7.70914 1.5 5.5 1.5C3.29086 1.5 1.5 3.29086 1.5 5.5C1.5 7.70914 3.29086 9.5 5.5 9.5Z"
+                stroke="#00C8B3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5 10.5L8.32495 8.325"
+                stroke="#00C8B3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
 
+          </div>
           <input
             class="w-full rounded-[25px] bg-white border border-[#E2E8F0]
            focus:border-[#E2E8F0] focus:outline-none
@@ -44,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="col-span-1">
+    <div class="lg:col-span-1 col-span-6 lg:order-2 order-0">
       <div class="flex justify-around  items-center gap-3">
         <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -61,17 +63,22 @@
       </div>
 
     </div>
-    <div class="col-span-2">
+    <div class="lg:col-span-2 col-span-6 lg:order-3 order-1">
 
-        <div class="flex  justify-end">
+      <div class="flex  justify-end">
 
 
-          <div>
-            <p class=" m-0 text-[11px] text-[#64748B]">{{ today }}</p>
-          </div>
+        <div>
+          <p class=" m-0 text-[11px] text-[#64748B]">
+            <span class="ps-1">{{ weekday }}</span>
+            <span class="ps-1">{{ day }}</span>
+            <span class="ps-1">{{ month }}</span>
+            <span class="ps-1">{{ year }}</span>
+          </p>
 
         </div>
 
+      </div>
 
 
     </div>

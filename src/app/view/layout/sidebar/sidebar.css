@@ -69,6 +69,7 @@
   padding: 10.5px 20px;
   align-items: center;
   margin-top: 4px;
+  border-radius: 25px !important;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.25s ease, padding-right 0.25s ease;
 }
@@ -131,3 +132,54 @@
   align-items: center;
 }
 
+.sidebar-link {
+  perspective: 800px;
+}
+
+.sidebar-link li {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #F0F3FA;
+  padding: 10.5px 20px;
+  align-items: center;
+  margin-top: 4px;
+  border-radius: 25px !important;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: background-color 0.3s ease,
+  transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+  box-shadow 0.35s ease;
+}
+
+.sidebar-link li svg path {
+  transition: fill 0.3s ease;
+}
+
+.sidebar-link li:not(.bg-activ):hover {
+  background-color: #F0F3FA;
+  transform: perspective(800px) rotateY(0deg) translateX(0) scale(1.05);
+}
+
+.sidebar-link li:not(.bg-activ):hover a {
+  color: #00C8B3;
+}
+
+.sidebar-link li:not(.bg-activ):hover svg path {
+  fill: #00C8B3;
+}
+
+.bg-activ {
+  background-color: #00C8B3;
+  border-radius: 25px !important;
+  border: 1px solid #F0F3FA;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: box-shadow 0.35s ease,
+  transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bg-activ:hover {
+  box-shadow: 8px 10px 22px rgba(0, 200, 179, 0.35);
+  transform: perspective(800px) rotateY(0deg) translateX(0) scale(1.05);
+}

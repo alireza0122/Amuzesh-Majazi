@@ -28,3 +28,35 @@
     box-shadow: 0 0 0 4px rgba(0, 200, 179, 0);
   }
 }
+
+
+
+.tasksItem .mmd {
+  display: none;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.tasksItem:hover .mmd {
+  display: block;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

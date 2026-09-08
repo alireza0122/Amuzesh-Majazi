@@ -1,10 +1,4 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  ViewChild,
-  OnDestroy,
-} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, OnDestroy, output } from '@angular/core';
 import { gsap } from 'gsap';
 
 @Component({
@@ -14,7 +8,11 @@ import { gsap } from 'gsap';
   templateUrl: './dashboard-header.html',
 })
 export class DashboardHeader implements AfterViewInit, OnDestroy {
+  menuClick = output<void>();
 
+  openMenu() {
+    this.menuClick.emit();
+  }
   searchOpen = false;
 
   @ViewChild('headerBox')
@@ -24,7 +22,6 @@ export class DashboardHeader implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.ctx = gsap.context(() => {
-
       gsap.fromTo(
         this.headerBox.nativeElement,
         {
@@ -39,7 +36,6 @@ export class DashboardHeader implements AfterViewInit, OnDestroy {
           ease: 'power2.out',
         },
       );
-
     }, this.headerBox.nativeElement);
   }
 

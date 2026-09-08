@@ -31,18 +31,279 @@
 
 
 
-.tasksItem .mmd {
-  display: none;
-  visibility: hidden;
-  transition: opacity 0.5s ease, visibility 0.5s ease;
+@media (min-width: 1280px) {
+  .tasksItem .mmd {
+    display: none;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+
+  .tasksItem:hover .mmd {
+    display: block;
+    visibility: visible;
+  }
 }
 
-.tasksItem:hover .mmd {
-  display: block;
-  visibility: visible;
+/*/////////////////////*/
+
+
+.dashboard-hover {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.dashboard-hover:hover {
+  transform: translateY(-3px);
 }
 
 
+/* ---------- Welcome Banner ---------- */
+
+.welcome-banner {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.welcome-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(27, 37, 89, 0.04);
+}
+
+
+/* ---------- Statistics Cards ---------- */
+
+.stat-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(27, 37, 89, 0.07);
+  border-color: #DCE6F7;
+}
+
+
+/* آیکون کارت آماری */
+
+.stat-card .stat-icon {
+  transition:
+    transform 0.35s ease,
+    background-color 0.35s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+
+/* ---------- Pending Tasks ---------- */
+@media (min-width: 1280px) {
+  .tasksItem {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background-color 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .tasksItem:hover {
+    transform: translateY(-3px);
+    background-color: #FFFFFF;
+    border-color: #DCE6F7;
+    box-shadow: 0 8px 24px rgba(27, 37, 89, 0.05);
+  }
+}
+
+
+
+.tasksItem p {
+  transition: color 0.25s ease;
+}
+
+
+
+
+/* ---------- Task View Button ---------- */
+
+.my-btn {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.my-btn:hover {
+  transform: translateY(-2px);
+  background-color: #F0FFFD;
+  border-color: #00C8B3;
+  box-shadow: 0 4px 12px rgba(0, 200, 179, 0.12);
+}
+
+.my-btn:active {
+  transform: scale(0.96);
+}
+
+
+/* ---------- Recent Events ---------- */
+
+.EventsItem {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.EventsItem:hover {
+  transform: translateX(-4px);
+}
+
+
+/* خط زیر رویداد */
+
+.EventsItem::after {
+  transition:
+    transform 0.5s ease,
+    background-color 0.3s ease;
+}
+
+.EventsItem:hover::after {
+  background-color: #00C8B3;
+}
+
+
+/* ---------- Sidebar Menu ---------- */
+
+.sidebar-menu-item {
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.sidebar-menu-item:hover {
+  transform: translateX(-4px);
+  background-color: #F0FFFD;
+  border-color: #D9F7F3;
+  color: #00B8A5;
+  box-shadow: 0 4px 15px rgba(27, 37, 89, 0.03);
+}
+
+
+/* آیکون سایدبار */
+
+.sidebar-menu-item svg {
+  transition:
+    transform 0.3s ease,
+    stroke 0.3s ease;
+}
+
+.sidebar-menu-item:hover svg {
+  transform: scale(1.1);
+  stroke: #00C8B3;
+}
+
+
+.profile-card {
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(27, 37, 89, 0.07);
+}
+
+
+/* عکس پروفایل */
+
+.profile-card img {
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.profile-card:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 0 0 6px #E6FFFB;
+}
+
+
+/* ---------- Header Icons ---------- */
+
+.header-icon {
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.header-icon:hover {
+  transform: translateY(-2px);
+  background-color: #F0FFFD;
+  box-shadow: 0 5px 15px rgba(0, 200, 179, 0.1);
+}
+
+
+/* ---------- Logout Button ---------- */
+
+.logout-btn {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  background-color: #FEE2E2;
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.1);
+}
+
+
+/* ---------- Change Role Button ---------- */
+
+.change-role-btn {
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.change-role-btn:hover {
+  transform: translateY(-2px);
+  background-color: #FF5555;
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.15);
+}
+
+
+/* ---------- Reduce Motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .dashboard-hover,
+  .stat-card,
+  .tasksItem,
+  .my-btn,
+  .EventsItem,
+  .sidebar-menu-item,
+  .profile-card,
+  .header-icon,
+  .logout-btn,
+  .change-role-btn {
+    transition: none;
+  }
+}
 
 
 

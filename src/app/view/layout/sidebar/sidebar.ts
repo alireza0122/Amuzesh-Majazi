@@ -1,21 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-sidebar',
-  styleUrl: './sidebar.css',
+  standalone: true,
+  imports: [],
   templateUrl: './sidebar.html',
+  styleUrl: './sidebar.css',
 })
 export class Sidebar {
+  isOpen = input<boolean>(false);
 
+  closeSidebar = output<void>();
 
-  isSidebarOpen = false;
-
-  toggleSidebar() {
-    this.isSidebarOpen = !this.isSidebarOpen;
-  }
-
-  closeSidebar() {
-    this.isSidebarOpen = false;
+  closeMenu() {
+    this.closeSidebar.emit();
   }
 }

@@ -114,6 +114,8 @@
   --stat-number: #18c8b4;
   --stat-icon-bg: #e0f2fe;
   --stat-icon-color: #60a5fa;
+  --text-numCart:#64748B;
+
 
 
   /* =========================
@@ -173,8 +175,8 @@ html.dark {
      Background
   ========================= */
 
-  --bg-color: #17202e;
-  --bg-sidebar: #111827;
+  --bg-color: #2C3930;
+  --bg-sidebar: #284731 !important;
 
   --bg-card: #151f32;
   --bg-card-soft: #1b273d;
@@ -253,7 +255,7 @@ html.dark {
      Sidebar
   ========================= */
 
-  --sidebar-bg: #111827;
+  --sidebar-bg: #3d4989a3;
   --sidebar-border: #1d2a3e;
 
   --sidebar-active-bg: #18c8b4;
@@ -267,7 +269,7 @@ html.dark {
      Welcome Banner
   ========================= */
 
-  --welcome-bg: rgba(4, 37, 110, 0.7);
+  --welcome-bg: #224b30;
   --welcome-title: #f1f5f9;
   --welcome-subtitle: #20d9c2;
 
@@ -276,10 +278,12 @@ html.dark {
      Statistics
   ========================= */
 
-  --stat-card-bg: #151f32;
+  --stat-card-bg: #224b30;
 
   --stat-title: #a8b4c7;
   --stat-number: #20d9c2;
+  --text-numCart: #fffff;
+
 
   --stat-icon-bg: #172f4b;
   --stat-icon-color: #6daeff;
@@ -337,7 +341,16 @@ html.dark {
 
 
 .welcome-bg{
-  background-color: --welcome-bg;
+  background-color: var(--welcome-bg);
+}
+.Statistics{
+  background-color: var(--stat-card-bg);
+}
+.stat-number{
+  color: var(--stat-number);
+}
+.text-numCart{
+  color: var(--text-numCart);
 }
 
 /* =========================================================

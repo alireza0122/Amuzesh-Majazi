@@ -1,16 +1,18 @@
 @import 'tailwindcss';
-
 @import 'styles/styles.scss';
 
 
-body {
-  background-color: #F0F3FA !important;
-  transition: none !important;
-}
+/* =========================================================
+   LIGHT THEME
+========================================================= */
 
-:root{
+:root {
 
-  --bg-color: #004eff;
+  /* =========================
+     Background
+  ========================= */
+
+  --bg-color: #f0f3fa;
   --bg-sidebar: #ffffff;
   --bg-card: #ffffff;
   --bg-card-soft: #f8faff;
@@ -18,6 +20,7 @@ body {
   --bg-hover: #f0f3fa;
   --bg-active: #18c8b4;
   --bg-active-hover: #13b8a5;
+
 
   /* =========================
      Text
@@ -29,6 +32,7 @@ body {
   --text-white: #ffffff;
   --text-active: #18c8b4;
 
+
   /* =========================
      Border
   ========================= */
@@ -36,6 +40,7 @@ body {
   --border-color: #e7ecf5;
   --border-light: #f0f3fa;
   --border-active: #18c8b4;
+
 
   /* =========================
      Brand Colors
@@ -47,6 +52,7 @@ body {
 
   --color-purple: #7155ff;
   --color-purple-light: #ede9fe;
+
 
   /* =========================
      Status Colors
@@ -70,11 +76,13 @@ body {
   --color-orange: #f59e0b;
   --color-orange-light: #fef3c7;
 
+
   /* =========================
      Header
   ========================= */
 
   --header-bg: #f0f3fa;
+
 
   /* =========================
      Sidebar
@@ -87,16 +95,18 @@ body {
   --sidebar-text: #1b2559;
   --sidebar-icon: #00c8b3;
 
+
   /* =========================
-     Welcome Banner
+     Welcome
   ========================= */
 
   --welcome-bg: #ffffff;
   --welcome-title: #1b2559;
   --welcome-subtitle: #18c8b4;
 
+
   /* =========================
-     Statistics Cards
+     Statistics
   ========================= */
 
   --stat-card-bg: #ffffff;
@@ -105,11 +115,13 @@ body {
   --stat-icon-bg: #e0f2fe;
   --stat-icon-color: #60a5fa;
 
+
   /* =========================
      Sections
   ========================= */
 
   --section-title: #1b2559;
+
 
   /* =========================
      Tasks
@@ -121,6 +133,7 @@ body {
   --task-description: #718096;
   --task-date: #a2aec9;
 
+
   /* =========================
      Events
   ========================= */
@@ -129,6 +142,7 @@ body {
   --event-border: #e7ecf5;
   --event-title: #1b2559;
   --event-description: #718096;
+
 
   /* =========================
      Notice
@@ -139,21 +153,259 @@ body {
   --notice-text: #1b2559;
   --notice-link: #00c8b3;
 
+
   /* =========================
      Footer
   ========================= */
 
   --footer-text: #718096;
   --footer-border: #a2aec9;
-
 }
 
-body{
+
+/* =========================================================
+   DARK THEME
+========================================================= */
+
+html.dark {
+
+  /* =========================
+     Background
+  ========================= */
+
+  --bg-color: #17202e;
+  --bg-sidebar: #111827;
+
+  --bg-card: #151f32;
+  --bg-card-soft: #1b273d;
+
+  --bg-input: #182338;
+  --bg-hover: #202d45;
+
+  --bg-active: #18c8b4;
+  --bg-active-hover: #13b8a5;
+
+
+  /* =========================
+     Text
+  ========================= */
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #a8b4c7;
+  --text-muted: #718096;
+
+  --text-white: #ffffff;
+  --text-active: #20d9c2;
+
+
+  /* =========================
+     Border
+  ========================= */
+
+  --border-color: #26344a;
+  --border-light: #1d2a3e;
+  --border-active: #18c8b4;
+
+
+  /* =========================
+     Brand
+  ========================= */
+
+  --color-primary: #18c8b4;
+  --color-primary-dark: #12b5a3;
+  --color-primary-light: #123f3b;
+
+  --color-purple: #8b7aff;
+  --color-purple-light: #292448;
+
+
+  /* =========================
+     Status
+  ========================= */
+
+  --color-red: #ff7070;
+  --color-red-light: #3a2027;
+
+  --color-yellow: #f5cf68;
+  --color-yellow-light: #3a331d;
+
+  --color-green: #20d9c2;
+  --color-green-light: #123f3b;
+
+  --color-blue: #6daeff;
+  --color-blue-light: #172f4b;
+
+  --color-pink: #f472b6;
+  --color-pink-light: #3a2032;
+
+  --color-orange: #f5a623;
+  --color-orange-light: #3a2b18;
+
+
+  /* =========================
+     Header
+  ========================= */
+
+  --header-bg: #0b1120;
+
+
+  /* =========================
+     Sidebar
+  ========================= */
+
+  --sidebar-bg: #111827;
+  --sidebar-border: #1d2a3e;
+
+  --sidebar-active-bg: #18c8b4;
+  --sidebar-active-text: #071512;
+
+  --sidebar-text: #dce4ef;
+  --sidebar-icon: #20d9c2;
+
+
+  /* =========================
+     Welcome Banner
+  ========================= */
+
+  --welcome-bg: rgba(4, 37, 110, 0.7);
+  --welcome-title: #f1f5f9;
+  --welcome-subtitle: #20d9c2;
+
+
+  /* =========================
+     Statistics
+  ========================= */
+
+  --stat-card-bg: #151f32;
+
+  --stat-title: #a8b4c7;
+  --stat-number: #20d9c2;
+
+  --stat-icon-bg: #172f4b;
+  --stat-icon-color: #6daeff;
+
+
+  /* =========================
+     Sections
+  ========================= */
+
+  --section-title: #f1f5f9;
+
+
+  /* =========================
+     Tasks
+  ========================= */
+
+  --task-bg: #111b2d;
+  --task-border: #26344a;
+
+  --task-title: #f1f5f9;
+  --task-description: #a8b4c7;
+  --task-date: #718096;
+
+
+  /* =========================
+     Events
+  ========================= */
+
+  --event-bg: #151f32;
+  --event-border: #26344a;
+
+  --event-title: #f1f5f9;
+  --event-description: #a8b4c7;
+
+
+  /* =========================
+     Notice
+  ========================= */
+
+  --notice-bg: #151f32;
+  --notice-border: #18c8b4;
+
+  --notice-text: #f1f5f9;
+  --notice-link: #20d9c2;
+
+
+  /* =========================
+     Footer
+  ========================= */
+
+  --footer-text: #8f9db2;
+  --footer-border: #34445c;
+}
+
+
+
+.welcome-bg{
+  background-color: --welcome-bg;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html,
+body {
   background-color: var(--bg-color);
+  color: var(--text-primary);
+
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease;
 }
-.bg-sidebar{
+
+
+/* =========================================================
+   COMMON COMPONENTS
+========================================================= */
+
+.bg-sidebar {
   background-color: var(--bg-sidebar);
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease;
 }
 
 
+/* =========================================================
+   THEME TOGGLE
+========================================================= */
 
+.theme-toggle-circle {
+  width: 26px;
+  height: 26px;
+  padding: 1px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-primary);
+  color: #ffffff;
+
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+html.dark .theme-toggle-circle {
+  background-color: var(--color-purple);
+
+  box-shadow:
+    0 0 12px rgba(113, 85, 255, 0.35);
+}
+
+
+.theme-icon {
+  width: 16px;
+  height: 16px;
+
+  display: block;
+
+  color: currentColor;
+}

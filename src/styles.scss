@@ -7,3 +7,153 @@ body {
   background-color: #F0F3FA !important;
   transition: none !important;
 }
+
+:root{
+
+  --bg-color: #004eff;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-soft: #f8faff;
+  --bg-input: #f8faff;
+  --bg-hover: #f0f3fa;
+  --bg-active: #18c8b4;
+  --bg-active-hover: #13b8a5;
+
+  /* =========================
+     Text
+  ========================= */
+
+  --text-primary: #1b2559;
+  --text-secondary: #718096;
+  --text-muted: #a2aec9;
+  --text-white: #ffffff;
+  --text-active: #18c8b4;
+
+  /* =========================
+     Border
+  ========================= */
+
+  --border-color: #e7ecf5;
+  --border-light: #f0f3fa;
+  --border-active: #18c8b4;
+
+  /* =========================
+     Brand Colors
+  ========================= */
+
+  --color-primary: #18c8b4;
+  --color-primary-dark: #13b8a5;
+  --color-primary-light: #d9f8f2;
+
+  --color-purple: #7155ff;
+  --color-purple-light: #ede9fe;
+
+  /* =========================
+     Status Colors
+  ========================= */
+
+  --color-red: #ff6b6b;
+  --color-red-light: #fee2e2;
+
+  --color-yellow: #f8d66d;
+  --color-yellow-light: #fff3cd;
+
+  --color-green: #18c8b4;
+  --color-green-light: #d9f8f2;
+
+  --color-blue: #60a5fa;
+  --color-blue-light: #e0f2fe;
+
+  --color-pink: #f472b6;
+  --color-pink-light: #fce7f3;
+
+  --color-orange: #f59e0b;
+  --color-orange-light: #fef3c7;
+
+  /* =========================
+     Header
+  ========================= */
+
+  --header-bg: #f0f3fa;
+
+  /* =========================
+     Sidebar
+  ========================= */
+
+  --sidebar-bg: #ffffff;
+  --sidebar-border: #f0f3fa;
+  --sidebar-active-bg: #18c8b4;
+  --sidebar-active-text: #ffffff;
+  --sidebar-text: #1b2559;
+  --sidebar-icon: #00c8b3;
+
+  /* =========================
+     Welcome Banner
+  ========================= */
+
+  --welcome-bg: #ffffff;
+  --welcome-title: #1b2559;
+  --welcome-subtitle: #18c8b4;
+
+  /* =========================
+     Statistics Cards
+  ========================= */
+
+  --stat-card-bg: #ffffff;
+  --stat-title: #718096;
+  --stat-number: #18c8b4;
+  --stat-icon-bg: #e0f2fe;
+  --stat-icon-color: #60a5fa;
+
+  /* =========================
+     Sections
+  ========================= */
+
+  --section-title: #1b2559;
+
+  /* =========================
+     Tasks
+  ========================= */
+
+  --task-bg: #f8faff;
+  --task-border: #e7ecf5;
+  --task-title: #1b2559;
+  --task-description: #718096;
+  --task-date: #a2aec9;
+
+  /* =========================
+     Events
+  ========================= */
+
+  --event-bg: #ffffff;
+  --event-border: #e7ecf5;
+  --event-title: #1b2559;
+  --event-description: #718096;
+
+  /* =========================
+     Notice
+  ========================= */
+
+  --notice-bg: #ffffff;
+  --notice-border: #18c8b4;
+  --notice-text: #1b2559;
+  --notice-link: #00c8b3;
+
+  /* =========================
+     Footer
+  ========================= */
+
+  --footer-text: #718096;
+  --footer-border: #a2aec9;
+
+}
+
+body{
+  background-color: var(--bg-color);
+}
+.bg-sidebar{
+  background-color: var(--bg-sidebar);
+}
+
+
+

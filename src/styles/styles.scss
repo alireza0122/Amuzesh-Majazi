@@ -3,19 +3,17 @@
 @use './colors' as colors;
  @use './font' as font;
 
-body {
-  background-color: #F0F3FA !important;
-}
+
 body {
   line-height: 1.5;
   direction: rtl;
 }
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+//:root {
+//  --background: #ffffff;
+//  --foreground: #171717;
+//}
 
 
 
@@ -58,12 +56,10 @@ body {
   transition-timing-function: linear !important;
 }
 
-*,*:after,*:before{
-  transition: .5s;
-}
-body{
-  background: #F8F8F8;
-}
+//*,*:after,*:before{
+//  transition: .5s;
+//}
+
 a{
   text-decoration: none!important;
 }

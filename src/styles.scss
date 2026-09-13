@@ -7,7 +7,9 @@
 ========================================================= */
 
 :root {
-
+  --box-tasksItem: #ffffff;
+  --tarrich: #64748B;
+  --webkit-scrollbar-thumb: #cee8ce;
   /* =========================
      Background
   ========================= */
@@ -170,7 +172,9 @@
 ========================================================= */
 
 html.dark {
-
+  --box-tasksItem: #224b30;
+  --tarrich: #ffffff;
+  --webkit-scrollbar-thumb: #0e250e;
   /* =========================
      Background
   ========================= */
@@ -421,4 +425,25 @@ html.dark .theme-toggle-circle {
   display: block;
 
   color: currentColor;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #d8d8d8;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+
+  background: var(--webkit-scrollbar-thumb) !important;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.box-tasksItem{
+  background-color: var(--box-tasksItem);
 }

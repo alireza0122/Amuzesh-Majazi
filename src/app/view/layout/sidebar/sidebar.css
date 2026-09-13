@@ -52,7 +52,7 @@
   border: 1px solid rgba(154, 135, 255, 0.22);
   border-radius: 15px;
 
-  background: #F0F3FA;
+
 
   /*box-shadow:*/
   /*  0 20px 10px rgba(10, 12, 30, 0.25),*/
@@ -324,7 +324,7 @@
 .sidebar-link li {
   display: flex;
   gap: 10px;
-  border-bottom: 1px solid #F0F3FA;
+  /*border-bottom: 1px solid #F0F3FA;*/
   padding: 10.5px 20px;
   align-items: center;
   margin-top: 4px;
@@ -398,7 +398,7 @@
 .sidebar-link li {
   display: flex;
   gap: 10px;
-  border-bottom: 1px solid #F0F3FA;
+  /*border-bottom: 1px solid #F0F3FA;*/
   padding: 10.5px 20px;
   align-items: center;
   margin-top: 4px;

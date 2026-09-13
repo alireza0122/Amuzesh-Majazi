@@ -8,6 +8,7 @@
 
 :root {
   --box-tasksItem: #ffffff;
+  --title-tasksItem: #64748B;
   --tarrich: #64748B;
   --webkit-scrollbar-thumb: #cee8ce;
   /* =========================
@@ -116,8 +117,7 @@
   --stat-number: #18c8b4;
   --stat-icon-bg: #e0f2fe;
   --stat-icon-color: #60a5fa;
-  --text-numCart:#64748B;
-
+  --text-numCart: #64748B;
 
 
   /* =========================
@@ -155,6 +155,7 @@
   --notice-bg: #ffffff;
   --notice-border: #18c8b4;
   --notice-text: #1b2559;
+
   --notice-link: #00c8b3;
 
 
@@ -164,6 +165,17 @@
 
   --footer-text: #718096;
   --footer-border: #a2aec9;
+  --bg-boxFooter: #FFFFFF;
+
+  --subTitle-tasksItem: #1B2559;
+  --time-tasksItem: #00C8B3;
+  --text-tasksItem: #64748B;
+  --title-tasksItemKar: #1B2559;
+
+  --tasksItemKar: #ffff ;
+  --name-text: #000000;
+
+  --bg-hero: #F0F3FA;
 }
 
 
@@ -172,15 +184,25 @@
 ========================================================= */
 
 html.dark {
-  --box-tasksItem: #224b30;
+  --bg-hero: rgba(0, 6, 21, 0.69);
+  --name-text:#ffff;
+  --tasksItemKar: #1d2838;
+  --title-tasksItemKar: #ffffff;
+  --time-tasksItem: #a8ffcc;
+  --subTitle-tasksItem: #8094ff;
+  --text-tasksItem: #bed8ff;
+
+  --bg-boxFooter: #1e293a;
+  --title-tasksItem: #ffffff;
+  --box-tasksItem: #1e293a;
   --tarrich: #ffffff;
   --webkit-scrollbar-thumb: #0e250e;
   /* =========================
      Background
   ========================= */
 
-  --bg-color: #2C3930;
-  --bg-sidebar: #284731 !important;
+  --bg-color: rgb(15 23 42);
+  --bg-sidebar: #1d2838 !important;
 
   --bg-card: #151f32;
   --bg-card-soft: #1b273d;
@@ -188,7 +210,7 @@ html.dark {
   --bg-input: #182338;
   --bg-hover: #202d45;
 
-  --bg-active: #18c8b4;
+  --bg-active: #b6c1e9;
   --bg-active-hover: #13b8a5;
 
 
@@ -259,7 +281,7 @@ html.dark {
      Sidebar
   ========================= */
 
-  --sidebar-bg: #3d4989a3;
+  --sidebar-bg: #0f1729;
   --sidebar-border: #1d2a3e;
 
   --sidebar-active-bg: #18c8b4;
@@ -273,7 +295,7 @@ html.dark {
      Welcome Banner
   ========================= */
 
-  --welcome-bg: #224b30;
+  --welcome-bg: #1d2838 ;
   --welcome-title: #f1f5f9;
   --welcome-subtitle: #20d9c2;
 
@@ -282,7 +304,7 @@ html.dark {
      Statistics
   ========================= */
 
-  --stat-card-bg: #224b30;
+  --stat-card-bg: #1d2838;
 
   --stat-title: #a8b4c7;
   --stat-number: #20d9c2;
@@ -343,17 +365,19 @@ html.dark {
 }
 
 
-
-.welcome-bg{
+.welcome-bg {
   background-color: var(--welcome-bg);
 }
-.Statistics{
+
+.Statistics {
   background-color: var(--stat-card-bg);
 }
-.stat-number{
+
+.stat-number {
   color: var(--stat-number);
 }
-.text-numCart{
+
+.text-numCart {
   color: var(--text-numCart);
 }
 
@@ -366,9 +390,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
 
-  transition:
-    background-color 0.35s ease,
-    color 0.35s ease;
+  transition: background-color 0.35s ease,
+  color 0.35s ease;
 }
 
 
@@ -378,9 +401,8 @@ body {
 
 .bg-sidebar {
   background-color: var(--bg-sidebar);
-  transition:
-    background-color 0.35s ease,
-    border-color 0.35s ease;
+  transition: background-color 0.35s ease,
+  border-color 0.35s ease;
 }
 
 
@@ -404,17 +426,15 @@ body {
   background-color: var(--color-primary);
   color: #ffffff;
 
-  transition:
-    background-color 0.35s ease,
-    box-shadow 0.35s ease;
+  transition: background-color 0.35s ease,
+  box-shadow 0.35s ease;
 }
 
 
 html.dark .theme-toggle-circle {
   background-color: var(--color-purple);
 
-  box-shadow:
-    0 0 12px rgba(113, 85, 255, 0.35);
+  box-shadow: 0 0 12px rgba(113, 85, 255, 0.35);
 }
 
 
@@ -444,6 +464,44 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
 }
-.box-tasksItem{
+
+.box-tasksItem {
   background-color: var(--box-tasksItem);
+}
+
+.title-tasksItem {
+  color: var(--title-tasksItem);
+}
+
+.bg-boxFooter {
+  background-color: var(--bg-boxFooter);
+}
+
+.text-footer {
+  color: var(--event-title);
+}
+
+.time-tasksItem {
+  color: var(--time-tasksItem);
+}
+.text-tasksItem {
+  color: var(--text-tasksItem);
+}
+
+.subtitle-tasksItem {
+  color: var(--subtitle-tasksItem);
+}
+
+
+.title-tasksItemKar{
+  color: var(--title-tasksItemKar);
+}
+.tasksItemKar{
+   background-color: var(--tasksItemKar);
+ }
+.name-text{
+  color: var(--name-text);
+}
+.bg-hero {
+  background-color: var(--bg-hero);
 }

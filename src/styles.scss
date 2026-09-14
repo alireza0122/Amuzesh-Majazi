@@ -7,6 +7,10 @@
 ========================================================= */
 
 :root {
+  --img-dark: 10px solid #DDE2EF;
+  --img-logo-light: block;
+  --img-logo-dark: none;
+
   --box-tasksItem: #ffffff;
   --title-tasksItem: #64748B;
   --tarrich: #64748B;
@@ -21,7 +25,8 @@
   --bg-card-soft: #f8faff;
   --bg-input: #f8faff;
   --bg-hover: #f0f3fa;
-  --bg-active: #18c8b4;
+  --bg-active: #00C8B3;
+
   --bg-active-hover: #13b8a5;
 
 
@@ -162,7 +167,7 @@
   /* =========================
      Footer
   ========================= */
-
+  --border-boxFooter: 1px solid #00C8B3;
   --footer-text: #718096;
   --footer-border: #a2aec9;
   --bg-boxFooter: #FFFFFF;
@@ -176,6 +181,7 @@
   --name-text: #000000;
 
   --bg-hero: #F0F3FA;
+  --tasksItemKar-border: 1px solid #F0F3FA;
 }
 
 
@@ -184,6 +190,10 @@
 ========================================================= */
 
 html.dark {
+
+
+  --img-logo-light: none;
+  --img-logo-dark: block;
   --bg-hero: rgba(0, 6, 21, 0.69);
   --name-text:#ffff;
   --tasksItemKar: #1d2838;
@@ -210,7 +220,7 @@ html.dark {
   --bg-input: #182338;
   --bg-hover: #202d45;
 
-  --bg-active: #b6c1e9;
+  --bg-active: #179488;
   --bg-active-hover: #13b8a5;
 
 
@@ -359,9 +369,12 @@ html.dark {
   /* =========================
      Footer
   ========================= */
-
+  --border-boxFooter: 1px solid #334155cc;
   --footer-text: #8f9db2;
   --footer-border: #34445c;
+
+  --img-dark: 10px solid #179488;
+  --tasksItemKar-border: 1px solid #334155cc;
 }
 
 
@@ -475,6 +488,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .bg-boxFooter {
   background-color: var(--bg-boxFooter);
+  border: var(--border-boxFooter);
 }
 
 .text-footer {
@@ -498,10 +512,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .tasksItemKar{
    background-color: var(--tasksItemKar);
+  border:  var(--tasksItemKar-border);
  }
 .name-text{
   color: var(--name-text);
 }
 .bg-hero {
   background-color: var(--bg-hero);
+
+}
+.img-logo-light {
+  display: var(--img-logo-light );
+}
+.img-logo-dark {
+  display: var(--img-logo-dark);
+}
+.img-dark{
+  border: var(--img-dark);
+}
+.bg-active-dark{
+  background-color: var(--bg-active) !important;
 }

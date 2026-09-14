@@ -206,7 +206,6 @@
 
   object-fit: cover;
 
-  border: 10px solid #DDE2EF;
   border-radius: 50%;
 
   /*box-shadow:*/
@@ -353,10 +352,10 @@
 
 /* هاور روی آیتم فعال (سبز پررنگ) */
 .bg-activ {
-  background-color: #00C8B3;
+
   border-radius: 25px !important;
 
-  border: 1px solid #F0F3FA;
+  /*border: 1px solid #F0F3FA;*/
   transition: box-shadow 0.3s ease, transform 0.25s ease;
 }
 
@@ -399,7 +398,7 @@
   display: flex;
   gap: 10px;
   /*border-bottom: 1px solid #F0F3FA;*/
-  padding: 10.5px 20px;
+  padding: 10px 20px;
   align-items: center;
   margin-top: 4px;
   border-radius: 25px !important;
@@ -417,7 +416,8 @@
 
 .sidebar-link li:not(.bg-activ):hover {
   background-color: #F0F3FA;
-  transform: perspective(800px) rotateY(0deg) translateX(0) scale(1.05);
+  /*box-shadow: 0 0 74px 3px #1e9488;*/
+  transform: perspective(800px) rotateY(0deg) translateX(0) scale(1.02);
 }
 
 .sidebar-link li:not(.bg-activ):hover a {
@@ -429,9 +429,7 @@
 }
 
 .bg-activ {
-  background-color: #00C8B3;
   border-radius: 25px !important;
-  border: 1px solid #F0F3FA;
   transform-style: preserve-3d;
   transform-origin: right center;
   transition: box-shadow 0.35s ease,

@@ -26,16 +26,17 @@ export class DashboardHeader implements AfterViewInit, OnDestroy {
         this.headerBox.nativeElement,
         {
           opacity: 0,
-          y: -20,
+          y: -10,
         },
         {
           opacity: 1,
           y: 0,
-          delay: 1,
           duration: 0.5,
+          delay: 0.5,
           ease: 'power2.out',
         },
       );
+
     }, this.headerBox.nativeElement);
   }
 

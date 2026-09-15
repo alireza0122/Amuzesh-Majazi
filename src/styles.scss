@@ -54,7 +54,7 @@
      Brand Colors
   ========================= */
 
-  --color-primary: #18c8b4;
+  --color-primary: #1c1c1c;
   --color-primary-dark: #13b8a5;
   --color-primary-light: #d9f8f2;
 
@@ -182,6 +182,10 @@
 
   --bg-hero: #F0F3FA;
   --tasksItemKar-border: 1px solid #F0F3FA;
+  --bg-togel-meno: #F0F3FA ;
+  --color-btn: #424242 ;
+  --border-color-link: #F0F3FA;
+
 }
 
 
@@ -191,7 +195,7 @@
 
 html.dark {
 
-
+  --border-color-link:#5f729f;
   --img-logo-light: none;
   --img-logo-dark: block;
   --bg-hero: rgba(0, 6, 21, 0.69);
@@ -375,6 +379,8 @@ html.dark {
 
   --img-dark: 10px solid #179488;
   --tasksItemKar-border: 1px solid #334155cc;
+  --bg-togel-meno: #424242;
+  --color-btn: #ffffff;
 }
 
 
@@ -436,8 +442,8 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-color: var(--color-primary);
-  color: #ffffff;
+  //background-color: var(--color-primary);
+  color: var(--color-primary);
 
   transition: background-color 0.35s ease,
   box-shadow 0.35s ease;
@@ -445,11 +451,14 @@ body {
 
 
 html.dark .theme-toggle-circle {
-  background-color: var(--color-purple);
+  //background-color: var(--color-purple);
 
   box-shadow: 0 0 12px rgba(113, 85, 255, 0.35);
 }
 
+.bg-togel-meno{
+  background-color: var(--bg-togel-meno);
+}
 
 .theme-icon {
   width: 16px;
@@ -533,3 +542,10 @@ body::-webkit-scrollbar-thumb:hover {
 .bg-active-dark{
   background-color: var(--bg-active) !important;
 }
+.color-btn{
+  color: var(--color-btn);
+}
+.border-color-link{
+  border-color: var(--border-color-link);
+}
+
